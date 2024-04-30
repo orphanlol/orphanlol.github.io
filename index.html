@@ -3,11 +3,39 @@
 <head>
     <script src="https://kit.fontawesome.com/cb7290d6de.js" crossorigin="anonymous"></script>
     <link href="/assets/jet.png" rel="icon" />
-    <link rel="stylesheet" href="/style.css">
-    <title>jet bio</title>
+    <link rel="stylesheet" href="/css/profile.css">
+    <title>@proofr</title>
 </head>
 <body>
+    
+    <div class="box">
+        <img src="/assets/profile/profile.png" class="pfp">
+        <h1 class="name">proofr</h1>
+        <h3 class="desc">i'm really like that</h3>
+        <a class="links" href="https://discord.com/users/1153670965939675249" target="_blank"><i class="fa-brands fa-discord"></i></a>
+        <a class="links" href="https://github.com/proofr" target="_blank"><i class="fa-brands fa-github"></i></a>
+    </div>
+    
+    <audio id="audio" src="/assets/audio.mp3" autoplay loop></audio>
+    <button class="audioBtn" role="button" onclick="toggleAudio()" id="toggleMusic"><i class="fa-solid fa-volume-high"></i></button>
 
+    <script>
+        var audio = document.getElementById('audio');
+        var button = document.getElementById('toggleMusic');
+        function toggleAudio() {
+            if (audio.paused) {
+                audio.play();
+                button.innerHTML = '<i class="fa-solid fa-volume-high"></i>';
+            } else {
+                audio.pause();
+                button.innerHTML = '<i class="fa-solid fa-volume-xmark"></i>';
+            }
+        }
+
+        window.onload = function() {
+            audio.play();
+            button.innerHTML = '<i class="fa-solid fa-volume-high"></i>';
+        }
+    </script>
 </body>
 </html>
-
