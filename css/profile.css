@@ -1,8 +1,21 @@
 @import url('https://fonts.googleapis.com/css2?family=Poppins:wght@400;700&display=swap');
 
+@keyframes slideIn {
+    from {
+        transform: translateY(300px);
+    }
+
+    to {
+        transform: translateY(0);
+    }
+}
+
+
+
 html {
     background-image: url(/assets/profile/background.png);
     background-repeat: no-repeat;
+    overflow: hidden;
     background-size: cover;
     cursor: url(/assets/cursor.cur), default;
     height: 100%;
@@ -26,13 +39,8 @@ html {
     backdrop-filter: blur(6.4px);
     -webkit-backdrop-filter: blur(6.4px);
     border: 1px solid rgba(25, 25, 25, 0.3);
-    transition: all 0.2s;
-}
-
-.box:hover {
-    width: 650px;
-    height: 360px;
-    transition: all 0.2s;
+    animation-name: slideIn;
+    animation-duration: 1s;
 }
 
 .links {
