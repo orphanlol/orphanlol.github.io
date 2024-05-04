@@ -109,7 +109,7 @@ html {
   cursor: url(/assets/cursor.cur), default;
   color: #fff;
   display: inline-block;
-  font-size: 14px;
+  font-size: 18px;
   font-weight: 600;
   line-height: 20px;
   padding: 6px 16px;
@@ -125,6 +125,7 @@ html {
     box-shadow: 0 4px 30px rgba(0, 0, 0, 0.1);
     cursor: url(/assets/cursor.cur), default;
     height: 5rem;
+    font-size: 20px;
     width: 5rem;
     backdrop-filter: blur(6.4px);
     -webkit-backdrop-filter: blur(6.4px);
